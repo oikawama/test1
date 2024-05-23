@@ -7756,12 +7756,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [95]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_receipt</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">'sales_ymd'</span><span class="p">:</span> <span class="s1">'sales_date'</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">df_receipt</span><span class="p">[[</span><span class="s1">'sales_date'</span><span class="p">,</span> <span class="s1">'customer_id'</span><span class="p">,</span> <span class="s1">'product_cd'</span><span class="p">,</span> <span class="s1">'amount'</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_receipt</span><span class="p">[[</span><span class="s1">'sales_ymd'</span><span class="p">,</span> <span class="s1">'customer_id'</span><span class="p">,</span> <span class="s1">'product_cd'</span><span class="p">,</span> <span class="s1">'amount'</span><span class="p">]]</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">'sales_ymd'</span><span class="p">:</span> <span class="s1">'sales_date'</span><span class="p">})</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -7771,21 +7769,107 @@ a.anchor-link {
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>   sales_date     customer_id  product_cd  amount
-0    20181103  CS006214000001  P070305012     158
-1    20181118  CS008415000097  P070701017      81
-2    20170712  CS028414000014  P060101005     170
-3    20190205  ZZ000000000000  P050301001      25
-4    20180821  CS025415000050  P060102007      90
-5    20190605  CS003515000195  P050102002     138
-6    20181205  CS024514000042  P080101005      30
-7    20190922  CS040415000178  P070501004     128
-8    20170504  ZZ000000000000  P071302010     770
-9    20191010  CS027514000015  P071101003     680
-</pre>
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[95]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>sales_date</th>
+<th>customer_id</th>
+<th>product_cd</th>
+<th>amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>20181103</td>
+<td>CS006214000001</td>
+<td>P070305012</td>
+<td>158</td>
+</tr>
+<tr>
+<th>1</th>
+<td>20181118</td>
+<td>CS008415000097</td>
+<td>P070701017</td>
+<td>81</td>
+</tr>
+<tr>
+<th>2</th>
+<td>20170712</td>
+<td>CS028414000014</td>
+<td>P060101005</td>
+<td>170</td>
+</tr>
+<tr>
+<th>3</th>
+<td>20190205</td>
+<td>ZZ000000000000</td>
+<td>P050301001</td>
+<td>25</td>
+</tr>
+<tr>
+<th>4</th>
+<td>20180821</td>
+<td>CS025415000050</td>
+<td>P060102007</td>
+<td>90</td>
+</tr>
+<tr>
+<th>5</th>
+<td>20190605</td>
+<td>CS003515000195</td>
+<td>P050102002</td>
+<td>138</td>
+</tr>
+<tr>
+<th>6</th>
+<td>20181205</td>
+<td>CS024514000042</td>
+<td>P080101005</td>
+<td>30</td>
+</tr>
+<tr>
+<th>7</th>
+<td>20190922</td>
+<td>CS040415000178</td>
+<td>P070501004</td>
+<td>128</td>
+</tr>
+<tr>
+<th>8</th>
+<td>20170504</td>
+<td>ZZ000000000000</td>
+<td>P071302010</td>
+<td>770</td>
+</tr>
+<tr>
+<th>9</th>
+<td>20191010</td>
+<td>CS027514000015</td>
+<td>P071101003</td>
+<td>680</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -7812,11 +7896,11 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [29]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [97]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">filtered_date</span> <span class="o">=</span> <span class="n">df_receipt</span><span class="p">[</span><span class="n">df_receipt</span><span class="p">[</span><span class="s1">'customer_id'</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"CS018205000001"</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">filtered_date</span><span class="p">[[</span><span class="s1">'sales_date'</span><span class="p">,</span> <span class="s1">'customer_id'</span><span class="p">,</span> <span class="s1">'product_cd'</span><span class="p">,</span> <span class="s1">'amount'</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">filtered_date</span><span class="p">[[</span><span class="s1">'sales_ymd'</span><span class="p">,</span> <span class="s1">'customer_id'</span><span class="p">,</span> <span class="s1">'product_cd'</span><span class="p">,</span> <span class="s1">'amount'</span><span class="p">]])</span>
 </pre></div>
 </div>
 </div>
@@ -7829,19 +7913,19 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>       sales_date     customer_id  product_cd  amount
-36       20180911  CS018205000001  P071401012    2200
-9843     20180414  CS018205000001  P060104007     600
-21110    20170614  CS018205000001  P050206001     990
-27673    20170614  CS018205000001  P060702015     108
-27840    20190216  CS018205000001  P071005024     102
-28757    20180414  CS018205000001  P071101002     278
-39256    20190226  CS018205000001  P070902035     168
-58121    20190924  CS018205000001  P060805001     495
-68117    20190226  CS018205000001  P071401020    2200
-72254    20180911  CS018205000001  P071401005    1100
-88508    20190216  CS018205000001  P040101002     218
-91525    20190924  CS018205000001  P091503001     280
+<pre>       sales_ymd     customer_id  product_cd  amount
+36      20180911  CS018205000001  P071401012    2200
+9843    20180414  CS018205000001  P060104007     600
+21110   20170614  CS018205000001  P050206001     990
+27673   20170614  CS018205000001  P060702015     108
+27840   20190216  CS018205000001  P071005024     102
+28757   20180414  CS018205000001  P071101002     278
+39256   20190226  CS018205000001  P070902035     168
+58121   20190924  CS018205000001  P060805001     495
+68117   20190226  CS018205000001  P071401020    2200
+72254   20180911  CS018205000001  P071401005    1100
+88508   20190216  CS018205000001  P040101002     218
+91525   20190924  CS018205000001  P091503001     280
 </pre>
 </div>
 </div>
@@ -7870,11 +7954,11 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [98]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">filtered_date</span> <span class="o">=</span> <span class="n">df_receipt</span><span class="p">[(</span><span class="n">df_receipt</span><span class="p">[</span><span class="s1">'customer_id'</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"CS018205000001"</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df_receipt</span><span class="p">[</span><span class="s1">'amount'</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">1000</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">filtered_date</span><span class="p">[[</span><span class="s1">'sales_date'</span><span class="p">,</span> <span class="s1">'customer_id'</span><span class="p">,</span> <span class="s1">'product_cd'</span><span class="p">,</span> <span class="s1">'amount'</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">filtered_date</span><span class="p">[[</span><span class="s1">'sales_ymd'</span><span class="p">,</span> <span class="s1">'customer_id'</span><span class="p">,</span> <span class="s1">'product_cd'</span><span class="p">,</span> <span class="s1">'amount'</span><span class="p">]])</span>
 </pre></div>
 </div>
 </div>
@@ -7887,10 +7971,10 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>       sales_date     customer_id  product_cd  amount
-36       20180911  CS018205000001  P071401012    2200
-68117    20190226  CS018205000001  P071401020    2200
-72254    20180911  CS018205000001  P071401005    1100
+<pre>       sales_ymd     customer_id  product_cd  amount
+36      20180911  CS018205000001  P071401012    2200
+68117   20190226  CS018205000001  P071401020    2200
+72254   20180911  CS018205000001  P071401005    1100
 </pre>
 </div>
 </div>
@@ -7919,11 +8003,11 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [99]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">filtered_date</span> <span class="o">=</span> <span class="n">df_receipt</span><span class="p">[(</span><span class="n">df_receipt</span><span class="p">[</span><span class="s1">'customer_id'</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"CS018205000001"</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df_receipt</span><span class="p">[</span><span class="s1">'amount'</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">1000</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">df_receipt</span><span class="p">[</span><span class="s1">'quantity'</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">5</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">filtered_date</span><span class="p">[[</span><span class="s1">'sales_date'</span><span class="p">,</span> <span class="s1">'customer_id'</span><span class="p">,</span> <span class="s1">'product_cd'</span><span class="p">,</span> <span class="s1">'quantity'</span><span class="p">,</span> <span class="s1">'amount'</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">filtered_date</span><span class="p">[[</span><span class="s1">'sales_ymd'</span><span class="p">,</span> <span class="s1">'customer_id'</span><span class="p">,</span> <span class="s1">'product_cd'</span><span class="p">,</span> <span class="s1">'quantity'</span><span class="p">,</span> <span class="s1">'amount'</span><span class="p">]])</span>
 </pre></div>
 </div>
 </div>
@@ -7936,13 +8020,13 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>       sales_date     customer_id  product_cd  quantity  amount
-36       20180911  CS018205000001  P071401012         1    2200
-9843     20180414  CS018205000001  P060104007         6     600
-21110    20170614  CS018205000001  P050206001         5     990
-47082    20190610  CS037414000080  P090401002         8     640
-68117    20190226  CS018205000001  P071401020         1    2200
-72254    20180911  CS018205000001  P071401005         1    1100
+<pre>       sales_ymd     customer_id  product_cd  quantity  amount
+36      20180911  CS018205000001  P071401012         1    2200
+9843    20180414  CS018205000001  P060104007         6     600
+21110   20170614  CS018205000001  P050206001         5     990
+47082   20190610  CS037414000080  P090401002         8     640
+68117   20190226  CS018205000001  P071401020         1    2200
+72254   20180911  CS018205000001  P071401005         1    1100
 </pre>
 </div>
 </div>
@@ -7971,11 +8055,11 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [40]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [102]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">filtered_date</span> <span class="o">=</span> <span class="n">df_receipt</span><span class="p">[(</span><span class="n">df_receipt</span><span class="p">[</span><span class="s1">'customer_id'</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"CS018205000001"</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df_receipt</span><span class="p">[</span><span class="s1">'amount'</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">1000</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df_receipt</span><span class="p">[</span><span class="s1">'amount'</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">2000</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">filtered_date</span><span class="p">[[</span><span class="s1">'sales_date'</span><span class="p">,</span> <span class="s1">'customer_id'</span><span class="p">,</span> <span class="s1">'product_cd'</span><span class="p">,</span> <span class="s1">'amount'</span><span class="p">]])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">filtered_date</span><span class="p">[[</span><span class="s1">'sales_ymd'</span><span class="p">,</span> <span class="s1">'customer_id'</span><span class="p">,</span> <span class="s1">'product_cd'</span><span class="p">,</span> <span class="s1">'amount'</span><span class="p">]])</span>
 </pre></div>
 </div>
 </div>
@@ -7988,8 +8072,8 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>       sales_date     customer_id  product_cd  amount
-72254    20180911  CS018205000001  P071401005    1100
+<pre>       sales_ymd     customer_id  product_cd  amount
+72254   20180911  CS018205000001  P071401005    1100
 </pre>
 </div>
 </div>
@@ -8018,11 +8102,11 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [88]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [103]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_receipt</span><span class="p">[[</span><span class="s1">'sales_ymd'</span><span class="p">,</span> <span class="s1">'customer_id'</span><span class="p">,</span> <span class="s1">'product_cd'</span><span class="p">,</span> <span class="s1">'amount'</span><span class="p">]]</span> \
-    <span class="n">df</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">'customer_id=="CS018205000001" &amp; product_cd!="P071401019"'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">filtered_date</span> <span class="o">=</span> <span class="n">df_receipt</span><span class="p">[(</span><span class="n">df_receipt</span><span class="p">[</span><span class="s1">'customer_id'</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"CS018205000001"</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df_receipt</span><span class="p">[</span><span class="s1">'product_cd'</span><span class="p">]</span> <span class="o">!=</span> <span class="s2">"P071401019"</span><span class="p">)]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">filtered_date</span><span class="p">[[</span><span class="s1">'sales_ymd'</span><span class="p">,</span> <span class="s1">'customer_id'</span><span class="p">,</span> <span class="s1">'product_cd'</span><span class="p">,</span> <span class="s1">'amount'</span><span class="p">]])</span>
 </pre></div>
 </div>
 </div>
@@ -8035,19 +8119,19 @@ a.anchor-link {
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>       sales_date     customer_id  product_cd  amount
-36       20180911  CS018205000001  P071401012    2200
-9843     20180414  CS018205000001  P060104007     600
-21110    20170614  CS018205000001  P050206001     990
-27673    20170614  CS018205000001  P060702015     108
-27840    20190216  CS018205000001  P071005024     102
-28757    20180414  CS018205000001  P071101002     278
-39256    20190226  CS018205000001  P070902035     168
-58121    20190924  CS018205000001  P060805001     495
-68117    20190226  CS018205000001  P071401020    2200
-72254    20180911  CS018205000001  P071401005    1100
-88508    20190216  CS018205000001  P040101002     218
-91525    20190924  CS018205000001  P091503001     280
+<pre>       sales_ymd     customer_id  product_cd  amount
+36      20180911  CS018205000001  P071401012    2200
+9843    20180414  CS018205000001  P060104007     600
+21110   20170614  CS018205000001  P050206001     990
+27673   20170614  CS018205000001  P060702015     108
+27840   20190216  CS018205000001  P071005024     102
+28757   20180414  CS018205000001  P071101002     278
+39256   20190226  CS018205000001  P070902035     168
+58121   20190924  CS018205000001  P060805001     495
+68117   20190226  CS018205000001  P071401020    2200
+72254   20180911  CS018205000001  P071401005    1100
+88508   20190216  CS018205000001  P040101002     218
+91525   20190924  CS018205000001  P091503001     280
 </pre>
 </div>
 </div>
@@ -10658,16 +10742,143 @@ a.anchor-link {
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [92]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span> 
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">df_sales_amount_by_date</span> <span class="o">=</span> <span class="n">df_receipt</span><span class="p">[[</span><span class="s1">'sales_date'</span><span class="p">,</span> <span class="s1">'amount'</span><span class="p">]]</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'sales_date'</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+
+<span class="n">df_sales_amount_by_date</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">df_sales_amount_by_date</span><span class="p">,</span> <span class="n">df_sales_amount_by_date</span><span class="o">.</span><span class="n">shift</span><span class="p">()],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">df_sales_amount_by_date</span><span class="o">.</span><span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'sales_date'</span><span class="p">,</span><span class="s1">'amount'</span><span class="p">,</span><span class="s1">'lag_ymd'</span><span class="p">,</span><span class="s1">'lag_amount'</span><span class="p">]</span>
+
+<span class="n">df_sales_amount_by_date</span><span class="p">[</span><span class="s1">'diff_amount'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_sales_amount_by_date</span><span class="p">[</span><span class="s1">'amount'</span><span class="p">]</span> <span class="o">-</span> <span class="n">df_sales_amount_by_date</span><span class="p">[</span><span class="s1">'lag_amount'</span><span class="p">]</span>
+<span class="n">df_sales_amount_by_date</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child jp-OutputArea-executeResult">
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[92]:</div>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>sales_date</th>
+<th>amount</th>
+<th>lag_ymd</th>
+<th>lag_amount</th>
+<th>diff_amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>20170101</td>
+<td>33723</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>NaN</td>
+</tr>
+<tr>
+<th>1</th>
+<td>20170102</td>
+<td>24165</td>
+<td>20170101.0</td>
+<td>33723.0</td>
+<td>-9558.0</td>
+</tr>
+<tr>
+<th>2</th>
+<td>20170103</td>
+<td>27503</td>
+<td>20170102.0</td>
+<td>24165.0</td>
+<td>3338.0</td>
+</tr>
+<tr>
+<th>3</th>
+<td>20170104</td>
+<td>36165</td>
+<td>20170103.0</td>
+<td>27503.0</td>
+<td>8662.0</td>
+</tr>
+<tr>
+<th>4</th>
+<td>20170105</td>
+<td>37830</td>
+<td>20170104.0</td>
+<td>36165.0</td>
+<td>1665.0</td>
+</tr>
+<tr>
+<th>5</th>
+<td>20170106</td>
+<td>32387</td>
+<td>20170105.0</td>
+<td>37830.0</td>
+<td>-5443.0</td>
+</tr>
+<tr>
+<th>6</th>
+<td>20170107</td>
+<td>23415</td>
+<td>20170106.0</td>
+<td>32387.0</td>
+<td>-8972.0</td>
+</tr>
+<tr>
+<th>7</th>
+<td>20170108</td>
+<td>24737</td>
+<td>20170107.0</td>
+<td>23415.0</td>
+<td>1322.0</td>
+</tr>
+<tr>
+<th>8</th>
+<td>20170109</td>
+<td>26718</td>
+<td>20170108.0</td>
+<td>24737.0</td>
+<td>1981.0</td>
+</tr>
+<tr>
+<th>9</th>
+<td>20170110</td>
+<td>20143</td>
+<td>20170109.0</td>
+<td>26718.0</td>
+<td>-6575.0</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
